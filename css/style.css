@@ -86,7 +86,9 @@ body button {
     letter-spacing: 0.06em;
 }
 
-/*.benefits-title {} треба приховати заголовок */
+.benefits-title, .projects-title {
+    display: none;
+} 
 
 .benefit-name {
     text-transform: uppercase;
