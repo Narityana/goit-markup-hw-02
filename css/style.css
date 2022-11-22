@@ -6,11 +6,20 @@ ul {
     margin: 0;
     padding: 0;
 }
+:root {
+    --blue: #2196F3;
+    --grey-light: #757575;
+    --grey-darck: #2F303A;
+    --white: #ffffff;
+    --secondwhite: #F5F4FA;
+    --black: #000000;
+    --secondblack: #212121;
+} 
 body {
     font-family: Roboto, sans-serif;
     font-weight: 400;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--grey-light);
     font-style: normal;
 }
 a {
@@ -24,49 +33,49 @@ body button {
     list-style: none;
 }
 .padge-header {
-    background-color: #FFFFFF;
-    color: #212121;
+    background-color: var(--white);
+    color: var(--secondblack);
 }
 .logo {
-    color: #000000;
+    color: var(--black);
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;       
 }
 .logo-footer {
-    color: #ffffff;
+    color: var(--white);
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     }
 .accent {
-    color: #2196F3;
+    color: var(--blue);
 }
 .site-nav a {
-    color: #212121;
+    color: var(--secondblack);
     letter-spacing: 0.02em;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
 }
 .site-nav a:hover, .site-nav a:focus {
-    color: #2196F3;
+    color: var(--blue);
 }
 .auth-nav a {
-    color: #757575;
+    color: var(--grey-light);
     letter-spacing: 0.02em;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
 }
 .auth-nav a:hover, .auth-nav a:focus {
-    color: #2196F3;
+    color: var(--blue);
 }
 .hero {
-    background-color: #2F303A;
-    color: #FFFFFF;
+    background-color: var(--grey-darck);
+    color: var(--white);
     letter-spacing: 0.06em;
 }
 .hero-title {
@@ -77,7 +86,7 @@ body button {
     line-height: 1.2;      
 }
 .hero button {
-    background-color: #2196F3;
+    background-color: var(--blue);
     color: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -87,13 +96,21 @@ body button {
 }
 
 .benefits-title, .projects-title {
-    display: none;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    margin: -1px;
 } 
-
 .benefit-name {
     text-transform: uppercase;
-    color: #212121;
-    font-weight: 700;
+    color: var(--secondblack);
     font-size: 14px;
     line-height: 1.2;
 }
@@ -102,67 +119,65 @@ body button {
     line-height: 1.2;
 }
 .activity h2 {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
-    color: #212121;
+    color: var(--secondblack);
 }
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--secondwhite);
 }
 .team-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
-    color: #212121;
+    color: var(--secondblack);
 }
 .team-list h3 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
-    color: #212121;
+    color: var(--secondblack);
 }
 .team-list p {
     font-size: 16px;
     line-height: 1.2;
-    color: #757575;
+    color: var(--grey-light);
 }
 footer {
-    background-color: #2F303A;
+    background-color: var(--grey-darck);
 }
 .location a {
     font-size: 14px;
     line-height: 1.2;
-    color: #FFFFFF;
+    color: var(--white);
 }
 .email a,
 .tel a {
     font-size: 14px;
     line-height: 1.2;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--white);
+    opacity: 0.6;
 }
 .filters button {
-    background-color: #F5F4FA;
+    background-color: var(--secondwhite) ;
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--secondblack);
 }
 .filters button:hover, .filters button:focus {
-    color: #ffffff;
-    background-color: #2196F3;
+    color: var(--white);
+    background-color: var(--blue);
 }
 .projects-list h2 {
-    font-weight: 700;
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--secondblack);
 }
 .projects-list p {
     font-size: 16px;
@@ -170,7 +185,7 @@ footer {
 }
 .studio-title {
     text-transform: uppercase;
-    color: #2196F3;
+    color: var(--blue);
     font-weight: 900;
     font-size: 44px;
     text-align: center;
